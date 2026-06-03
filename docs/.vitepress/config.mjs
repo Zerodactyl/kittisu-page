@@ -18,8 +18,29 @@ export default defineConfig({
 
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/guide' },
-      { text: 'Links', link: '/links' },
+      { text: 'Guide', link: '/guide/introduce' },
+      { text: 'Links', items: [
+        { text: 'KernelSU Documentation', link: 'https://kernelsu.org/' },
+        { text: 'KernelSU Modules Repository', link: 'https://modules.kernelsu.org/' },
+      ]},
+    ],
+
+    sidebar: [
+      {
+        text: 'Get started',
+        items: [
+          { text: 'Install', link: '/guide/install' },
+        ],
+      },
+      {
+        text: 'Building Kernel',
+        items: [
+          { text: 'Manual Hooks', link: '/guide/manual-integrate' },
+          { text: 'Unofficial Supported Devices', link: '/guide/unofficial-devices' },
+          { text: 'FAQ', link: '/guide/faq' },
+          { text: 'About KittiSU', link: '/guide/introduce' },
+        ],
+      },
     ],
 
     socialLinks: [
@@ -35,6 +56,11 @@ export default defineConfig({
     editLink: {
       pattern: 'https://github.com/terebiko/KittiSU/edit/main/docs/:path',
       text: 'Edit this page on GitHub',
+    },
+
+    docFooter: {
+      prev: 'Previous page',
+      next: 'Next page',
     },
   },
 })
