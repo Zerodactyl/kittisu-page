@@ -1,0 +1,61 @@
+/* ---- Feature Card Hover Effects ---- */
+
+.VPFeature {
+  transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border: 1px solid transparent;
+}
+
+.VPFeature:hover {
+  transform: translateY(-6px) scale(1.02);
+  border-color: rgba(168, 85, 247, 0.25);
+  box-shadow:
+    0 12px 40px -8px rgba(168, 85, 247, 0.15),
+    0 0 0 1px rgba(168, 85, 247, 0.08);
+}
+
+.VPFeature:hover .VPFeature .box {
+  background: rgba(168, 85, 247, 0.03);
+}
+
+/* backdrop blur effect on the card */
+.VPFeature:hover {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+/* icon animation on hover */
+.VPFeature:hover .VPFeature :first-child {
+  transform: scale(1.1);
+}
+
+/* title color shift on hover */
+.VPFeature:hover h2 {
+  color: var(--vp-c-brand-1);
+}
+
+/* ---- Hero section enhancements ---- */
+
+.VPHomeHero .container .main .name .clip {
+  background: linear-gradient(135deg, #a855f7, #ec4899);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.VPHomeHero .image {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* ---- Image inside feature cards (if any) ---- */
+.VPFeature img {
+  transition: transform 0.3s ease;
+}
+
+.VPFeature:hover img {
+  transform: scale(1.08);
+}
