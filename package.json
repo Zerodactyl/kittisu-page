@@ -1,0 +1,25 @@
+{
+  "name": "kittisu.github.io",
+  "version": "1.0.0",
+  "description": "KittiSU project website",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terebiko/kittisu.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/terebiko/kittisu.github.io/issues"
+  },
+  "homepage": "https://github.com/terebiko/kittisu.github.io#readme",
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}

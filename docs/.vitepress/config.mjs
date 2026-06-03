@@ -1,0 +1,36 @@
+import { defineConfig } from 'vitepress'
+
+export default defineConfig({
+  title: 'KittiSU',
+  description: 'A more stable fork of ReSukiSU',
+  base: '/',
+
+  head: [
+    ['link', { rel: 'icon', href: '/logo.jpg' }],
+    ['meta', { name: 'theme-color', content: '#a855f7' }],
+  ],
+
+  themeConfig: {
+    logo: '/logo.jpg',
+
+    nav: [
+      { text: 'Home', link: '/' },
+      { text: 'Guide', link: '/guide' },
+      { text: 'Links', link: '/links' },
+    ],
+
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/terebiko/KittiSU' },
+    ],
+
+    footer: {
+      message: 'Documented with ❤️ by KittiSU Development',
+      copyright: 'Copyright © 2025-2026 KittiSU, under MIT License',
+    },
+
+    editLink: {
+      pattern: 'https://github.com/terebiko/KittiSU/edit/main/docs/:path',
+      text: 'Edit this page on GitHub',
+    },
+  },
+})
