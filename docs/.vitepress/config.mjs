@@ -7,6 +7,9 @@ export default defineConfig({
 
   head: [
     ['link', { rel: 'icon', href: '/logo.jpg' }],
+    ['link', { rel: 'preconnect', href: 'https://cdn.jsdelivr.net/' }],
+    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/jetbrains-mono-webfont@latest/jetbrains-mono.css' }],
+    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/remixicon@latest/fonts/remixicon.css' }],
     ['meta', { name: 'theme-color', content: '#a855f7' }],
   ],
 
@@ -21,6 +24,7 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/terebiko/KittiSU' },
+      { icon: 'telegram', link: 'https://t.me/illogicalEmission' },
     ],
 
     footer: {
