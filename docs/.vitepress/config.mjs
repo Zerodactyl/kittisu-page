@@ -8,9 +8,12 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', href: '/logo.jpg' }],
     ['link', { rel: 'preconnect', href: 'https://cdn.jsdelivr.net/' }],
+    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/misans-vf@1.0.0/lib/MiSans.min.css' }],
     ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/jetbrains-mono-webfont@latest/jetbrains-mono.css' }],
     ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/remixicon@latest/fonts/remixicon.css' }],
-    ['meta', { name: 'theme-color', content: '#a855f7' }],
+    ['script', { src: 'https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js', defer: '' }],
+    ['script', { src: '/md-anim.js', defer: '' }],
+    ['meta', { name: 'theme-color', content: '#0061A4' }],
   ],
 
   themeConfig: {
@@ -28,12 +31,14 @@ export default defineConfig({
     sidebar: [
       {
         text: 'Get started',
+        collapsed: false,
         items: [
           { text: 'Install', link: '/guide/install' },
         ],
       },
       {
         text: 'Building Kernel',
+        collapsed: false,
         items: [
           { text: 'Manual Hooks', link: '/guide/manual-integrate' },
           { text: 'Unofficial Supported Devices', link: '/guide/unofficial-devices' },
