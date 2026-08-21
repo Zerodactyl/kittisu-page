@@ -6,7 +6,7 @@ hero:
   text: A MORE STABLE FORK OF RESUKISU
   tagline: Make Android Root Great Again!
   image:
-    src: /logo.jpg
+    src: /logo.png
     alt: KittiSU
   actions:
     - theme: brand
