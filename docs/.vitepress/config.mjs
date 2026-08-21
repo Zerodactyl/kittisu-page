@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'KittiSU',
   description: 'A more stable fork of ReSukiSU',
-  base: '/',
+  base: '/kittisu-page/',
 
   head: [
     ['link', { rel: 'icon', href: '/logo.png' }],
