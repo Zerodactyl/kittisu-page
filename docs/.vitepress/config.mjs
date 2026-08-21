@@ -6,7 +6,7 @@ export default defineConfig({
   base: '/',
 
   head: [
-    ['link', { rel: 'icon', href: '/logo.jpg' }],
+    ['link', { rel: 'icon', href: '/logo.png' }],
     ['link', { rel: 'preconnect', href: 'https://cdn.jsdelivr.net/' }],
     ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/misans-vf@1.0.0/lib/MiSans.min.css' }],
     ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/jetbrains-mono-webfont@latest/jetbrains-mono.css' }],
@@ -17,7 +17,7 @@ export default defineConfig({
   ],
 
   themeConfig: {
-    logo: '/logo.jpg',
+    logo: '/logo.png',
 
     nav: [
       { text: 'Home', link: '/' },
