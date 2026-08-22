@@ -18,27 +18,13 @@ KittiSU's manager is currently under development. You can obtain the latest buil
 
 ## Install {#installation}
 
-KittiSU provides the following two installation methods:
-
-### LKM Installation {#lkm}
-
-After installing the KittiSU Manager, if your kernel version is ≥ `5.10`, clicking `Not Installed` will redirect you to the installation interface and display the `LKM patching/installation` option.
-
-Follow the prompts in the Manager to select the `boot` / `init_boot` / `vendor_boot` file, then click Next.
-
-::: info Tips
-Devices requiring `vendor_boot` patching are quite rare, so you generally only need to patch the `init_boot` file.
-:::
-
-The Manager will quickly determine the LKM file based on the system's KMI, patch the provided image file, and output the patched file as `KernelSU_patched_*.img` to the download directory.
-
-After that, you need to flash the patched image file to the corresponding partition using appropriate methods, and you're all set.
+KittiSU provides the following installation method:
 
 ### GKI2/GKI1/Non-GKI Kernel (AnyKernel3) Installation {#builtin}
 
 Although the KittiSU Manager has a built-in AnyKernel3 installation method, this option will not be displayed if the Manager does not have ROOT access. You may need to perform the following steps to enable it:
 
-1. Flash AnyKernel3 after LKM installation to grant root.
+1. Flash AnyKernel3 to grant root.
 2. Using `magiskboot` to manually patch boot.img.
 
 #### Patch boot.img manually {#manual-patch-boot}
